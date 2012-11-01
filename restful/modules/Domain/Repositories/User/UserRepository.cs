@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using MongoDB.Driver.Linq;
+
 namespace Domain.User
 {
     public class UserRepository:BaseRepository<UserModel>,IUserRepository
     {
-        public UserRepository() : base("Users") { }
+        public UserRepository() : base("user") { }
 
         public UserModel GetUserByName(string name)
         {

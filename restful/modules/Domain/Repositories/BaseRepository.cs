@@ -25,7 +25,7 @@ namespace Domain
         #region Methods
         private void Connect()
         {
-            db = server.GetDatabase("Comp332", new MongoCredentials("admin", "scientist"));
+            db = server.GetDatabase("comp332"/*, new MongoCredentials("admin", "scientist")*/);
         }
 
         private void SetCollection(string collectionName)
