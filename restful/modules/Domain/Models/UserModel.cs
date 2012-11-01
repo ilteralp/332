@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using MongoDB.Bson.Serialization.Attributes;
-namespace Domain
+using Domain.Course;
+namespace Domain.User
 {
     public class UserModel
     {

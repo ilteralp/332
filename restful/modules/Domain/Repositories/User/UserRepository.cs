@@ -2,11 +2,16 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
-namespace Domain
+using MongoDB.Driver.Linq;
+namespace Domain.User
 {
-    public class UserRepository
+    public class UserRepository:BaseRepository<UserModel>,IUserRepository
     {
-        //TODO: create baserepository
+        public UserRepository() : base("Users") { }
+
+        public UserModel GetUserByName(string name)
+        {
+            return collection.AsQueryable<UserModel>().Where(_ => _.Name.Equals(name)).FirstOrDefault();
+        }
     }
 }
