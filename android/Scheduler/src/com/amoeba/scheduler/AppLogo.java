@@ -7,7 +7,7 @@ import android.os.Bundle;
 public class AppLogo extends Activity {
 	/** Called when the activity is first created. */
 	@Override
-    protected void onCreate(Bundle savedInstanceState) {
+	protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.app_logo);
         
@@ -17,14 +17,13 @@ public class AppLogo extends Activity {
         			int timer = 0;
         			while(timer < 5000) {
         				sleep(100);
-        				timer = timer + 100;
+        				timer += 100;
         			}
         			startActivity(new Intent("com.amoeba.scheduler.CLEARSCREEN"));
         		}
         		catch (InterruptedException e) {
-					// TODO: handle exception
         			e.printStackTrace();
-				}
+        		}
         		finally {
         			finish();
         		}
