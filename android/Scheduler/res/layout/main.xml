@@ -13,21 +13,17 @@
         android:src="@drawable/logo"
         android:visibility="visible" />
 
-
-
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Username"
+        android:text="@string/username"
         android:textAppearance="?android:attr/textAppearanceLarge" />
-
 
     <EditText
         android:id="@+id/editText1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
-
         <requestFocus />
     </EditText>
 
@@ -35,25 +31,20 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Password"
+        android:text="@string/password"
         android:textAppearance="?android:attr/textAppearanceLarge" />
-
-
+    
     <EditText
         android:id="@+id/editText2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword" />
 
-
     <CheckBox
         android:id="@+id/checkBox1"
         android:layout_width="match_parent"
         android:layout_height="84dp"
-        android:text="Remember Me" />
-
-
-
+        android:text="@string/remember_me" />
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -70,14 +61,14 @@
             android:layout_width="0.0dip"
             android:layout_height="fill_parent"
             android:layout_weight="1.0"
-            android:text="Login" />
+            android:text="@string/login" />
 
         <Button
             android:id="@+id/Register"
             android:layout_width="0.0dip"
             android:layout_height="fill_parent"
             android:layout_weight="1.0"
-            android:text="Register" />
+            android:text="@string/register" />
     </LinearLayout>
  
 </LinearLayout>
