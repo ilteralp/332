@@ -4,14 +4,24 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-
+using Domain.User;
 namespace restfulapi.Api
 {
     public class UsersController : ApiController
     {
-        public string Get()
+        IUserRepository repository;
+        public UsersController()
         {
-            return "emre";
+            repository = new UserRepository();
+        }
+        public UserModel GetUser(string id)
+        {
+            return repository.GetUserByName(id);
+        }
+
+        public IEnumerable<UserModel> GetList()
+        {
+            return repository.GetList();
         }
     }
 }

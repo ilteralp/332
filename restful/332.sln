@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "modules\Domain\Domain.csproj", "{AE2EECEE-3906-4773-8975-A40A0452BA47}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "restfulapi", "restfulapi\restfulapi.csproj", "{D5DCD4C7-5C8E-48A8-A3DF-47BC0BB21B65}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "restfulapi", "restfulapi\restfulapi.csproj", "{9008FA4F-7F57-4312-AD72-3A367BB80886}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +15,10 @@ Global
 		{AE2EECEE-3906-4773-8975-A40A0452BA47}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE2EECEE-3906-4773-8975-A40A0452BA47}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE2EECEE-3906-4773-8975-A40A0452BA47}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D5DCD4C7-5C8E-48A8-A3DF-47BC0BB21B65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D5DCD4C7-5C8E-48A8-A3DF-47BC0BB21B65}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D5DCD4C7-5C8E-48A8-A3DF-47BC0BB21B65}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D5DCD4C7-5C8E-48A8-A3DF-47BC0BB21B65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9008FA4F-7F57-4312-AD72-3A367BB80886}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9008FA4F-7F57-4312-AD72-3A367BB80886}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9008FA4F-7F57-4312-AD72-3A367BB80886}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9008FA4F-7F57-4312-AD72-3A367BB80886}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

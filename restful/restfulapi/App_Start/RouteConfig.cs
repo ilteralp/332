@@ -5,6 +5,8 @@ using System.Web;
 using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Routing;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 
 namespace restfulapi
 {
@@ -16,7 +18,7 @@ namespace restfulapi
 
             routes.MapHttpRoute(
                 name: "DefaultApi",
-                routeTemplate: "api/{controller}/{id}",
+                routeTemplate: "api/{controller}/{action}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
 
@@ -25,6 +27,14 @@ namespace restfulapi
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+
+            JsonSerializerSettings serializerSettings = new JsonSerializerSettings();
+            serializerSettings.Converters.Add(new IsoDateTimeConverter());
+
+            HttpConfiguration configuration = GlobalConfiguration.Configuration;
+
+            configuration.Formatters.Insert(0, new JsonNetFormatter(serializerSettings));
+
         }
     }
 }
